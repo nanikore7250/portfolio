@@ -3,32 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>nanikore</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#zenn">Zenn</a></li>
-                <li><a href="#qiita">Qiita</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">nanikore</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#zenn">Zenn</a></li>
+                    <li><a href="#qiita">Qiita</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <h1>nanikore</h1>
-        <section id="zenn">
-            <h2>Zennの記事を載せる</h2>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>nanikore</h1>
+                <p class="tagline">ポートフォリオサイト</p>
+                <p class="description">技術情報や記事をシェアしています</p>
+            </div>
         </section>
-        <section id="qiita">
-            <h2>Qiitaの記事を載せる</h2>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About</h2>
+                <p>ソフトウェア開発に関心があり、日々学習を続けています。</p>
+                <div class="skills">
+                    <h3>スキル</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Web Dev</span>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>他の記事を載せる</h2>
+
+        <!-- Zenn Section -->
+        <section id="zenn" class="article-section">
+            <div class="container">
+                <h2>Zenn</h2>
+                <p>Zennで公開している技術記事です。</p>
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <h3>記事タイトル1</h3>
+                        <p>ここに記事の概要が入ります。</p>
+                        <a href="#" class="link">記事を読む →</a>
+                    </article>
+                    <article class="article-card">
+                        <h3>記事タイトル2</h3>
+                        <p>ここに記事の概要が入ります。</p>
+                        <a href="#" class="link">記事を読む →</a>
+                    </article>
+                    <article class="article-card">
+                        <h3>記事タイトル3</h3>
+                        <p>ここに記事の概要が入ります。</p>
+                        <a href="#" class="link">記事を読む →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qiita Section -->
+        <section id="qiita" class="article-section">
+            <div class="container">
+                <h2>Qiita</h2>
+                <p>Qiitaで公開している技術情報です。</p>
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <h3>記事タイトル1</h3>
+                        <p>ここに記事の概要が入ります。</p>
+                        <a href="#" class="link">記事を読む →</a>
+                    </article>
+                    <article class="article-card">
+                        <h3>記事タイトル2</h3>
+                        <p>ここに記事の概要が入ります。</p>
+                        <a href="#" class="link">記事を読む →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Articles Section -->
+        <section id="other" class="article-section">
+            <div class="container">
+                <h2>その他の記事</h2>
+                <p>ブログやメディアなどに公開している記事です。</p>
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <h3>記事タイトル1</h3>
+                        <p>ここに記事の概要が入ります。</p>
+                        <a href="#" class="link">記事を読む →</a>
+                    </article>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 nanikore. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2026 nanikore. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
