@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>nanikore</title>
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js"></script>
 </head>
 <body>
     <header>
@@ -48,50 +49,13 @@
         </section>
 
         <!-- Zenn Section -->
-        <section id="zenn" class="article-section">
-            <div class="container">
-                <h2>Zenn</h2>
-                <p>Zennで公開している技術記事です。</p>
-                <div class="articles-grid">
-                    <article class="article-card">
-                        <h3>記事タイトル1</h3>
-                        <p>ここに記事の概要が入ります。</p>
-                        <a href="#" class="link">記事を読む →</a>
-                    </article>
-                    <article class="article-card">
-                        <h3>記事タイトル2</h3>
-                        <p>ここに記事の概要が入ります。</p>
-                        <a href="#" class="link">記事を読む →</a>
-                    </article>
-                    <article class="article-card">
-                        <h3>記事タイトル3</h3>
-                        <p>ここに記事の概要が入ります。</p>
-                        <a href="#" class="link">記事を読む →</a>
-                    </article>
-                </div>
-            </div>
+        <section id="zenn" class="article-section" hx-get="fragment/zenn.html" hx-trigger="load">
+            loading Zenn...
         </section>
-
         <!-- Qiita Section -->
-        <section id="qiita" class="article-section">
-            <div class="container">
-                <h2>Qiita</h2>
-                <p>Qiitaで公開している技術情報です。</p>
-                <div class="articles-grid">
-                    <article class="article-card">
-                        <h3>記事タイトル1</h3>
-                        <p>ここに記事の概要が入ります。</p>
-                        <a href="#" class="link">記事を読む →</a>
-                    </article>
-                    <article class="article-card">
-                        <h3>記事タイトル2</h3>
-                        <p>ここに記事の概要が入ります。</p>
-                        <a href="#" class="link">記事を読む →</a>
-                    </article>
-                </div>
-            </div>
+        <section id="qiita" class="article-section" hx-get="fragment/qiita.html" hx-trigger="load">
+            loading Qiita...
         </section>
-
         <!-- Other Articles Section -->
         <section id="other" class="article-section">
             <div class="container">
