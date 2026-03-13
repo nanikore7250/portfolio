@@ -11,4 +11,5 @@
 # 進捗
  - 2026/3/10 リポジトリを作成
  - 2026/3/11 シンプルなwebページを作成
- - htmxを適用
+ - 2026/3/12 htmxを適用
+ - 2026/3/13 Zenn APIで情報とれることを確認 curl https://zenn.dev/api/articles?username=nanikore
