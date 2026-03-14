@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Qiita</h2>
+    <p>Qiitaで公開している技術情報です。</p>
+    <div class="articles-grid">
+    {% for data in datas %}
+        <article class="article-card">
+            <h3>{{ data.title }}</h3>
+            <a href="{{ data.url }}" class="link" target="_blank">記事を読む →</a>
+        </article>
+    {% endfor %}
+    </div>
+</div>
