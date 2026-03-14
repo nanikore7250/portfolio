@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Zenn</h2>
+    <p>Zennで公開している技術記事です。</p>
+    <div class="articles-grid">
+    {% for data in datas %}
+        <article class="article-card">
+            <span style="font-size: 3em;">{{ data.emoji }}</span>
+            <p>{{ data.title }}</p>
+            <a href="https://zenn.dev{{ data.path }}" class="link" target="_blank">記事を読む →</a>
+        </article>
+    {% endfor %}
+    </div>
+</div>
